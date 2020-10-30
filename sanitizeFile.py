@@ -1,4 +1,5 @@
 #!/usr/bin/python
+#Divyaa Kamalanathan 2020
 import re
 
 IOCList = []
@@ -32,9 +33,9 @@ def getIndicatorsfromList(TheList):
             IOCs['URLs'].append(items)
         elif IP.match(items):
             IOCs['IPs'].append(items)
-        elif SHA256.match(items): #Check if it matches the format of an SHA256 hash and is not a duplicate
+        elif SHA256.match(items): 
             IOCs['SHAs'].append(items)
-        elif MD5.match(items): #Check if it matches the format of an MD5 Hash and is not a duplicate
+        elif MD5.match(items): 
             IOCs['MD5s'].append(items)
         
     return IOCs
@@ -49,7 +50,7 @@ def printIOCs(IOCs):
 		
 if __name__ == "__main__":
     import sys
-    OpenFileAndSplitIntoSet("RyukIOCs.txt")
+    OpenFileAndSplitIntoSet("") #insert filename here
     newIOCList = getIndicatorsfromList(IOCList)
     printIOCs(newIOCList)
     
