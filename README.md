@@ -6,7 +6,7 @@ How to use this script
   * Make sure that you set up Python environment variables
     https://docs.python.org/3/using/windows.html#excursus-setting-environment-variables
     
-2. Download the repository and extract the sanitize.py file
+2. Download the sanitize.py file or the zip of the repository and extract the file
 
 3. Edit the script so the file name in the script is the file you want to sanitize 
   * Make sure that the file is in the same directory as sanitize.py OR include the full path 
